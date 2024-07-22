@@ -1,0 +1,15 @@
+/* Custom styles for the lyrics animation */
+
+.lyric-line {
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center; 
+  margin: 0 auto; 
+  width: fit-content; 
+  animation: typing 1.5s steps(50, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}

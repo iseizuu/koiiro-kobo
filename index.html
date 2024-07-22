@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koiiro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alatsi&family=Rancho&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body style="font-family: 'Alatsi', sans-serif"
+  class="min-w-screen min-h-screen flex items-center justify-center px-5 py-5 bg-gray-900 text-gray-200">
+  <div class="w-auto lg:w-1/4 mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+    <div class="text-gray-900 px-4 py-3 rounded relative border-b">
+      <strong class="font-bold">Kobokan.exe</strong>
+      <span class="block sm:inline"></span>
+      <span class="absolute top-0 bottom-0 right-0 px-4 py-3">
+        <button onclick="document.getElementById('audio').play();">
+          <svg class="fill-current h-6 w-6 text-red-500" role="button" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20">
+            <title>Close</title>
+            <path
+              d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z" />
+          </svg>
+        </button>
+      </span>
+    </div>
+    <div class="p-4">
+      <div class="flex justify-end mb-4">
+        <div class="flex justify-center items-center space-x-2">
+          <div class="bg-blue-500 text-white p-3 rounded-l-lg rounded-br-lg max-w-xs">
+            Beli ciki, beli koyo
+            <audio id="audio" class="mb-5" autoplay>
+              <source src="audio.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <img
+            src="https://cdn.discordapp.com/attachments/718032929825226884/1264140111797289033/25914b224cb9edf4cbd3f385aed5fb55.jpg?ex=669cc9b9&is=669b7839&hm=af871b70d6a04006f870d05d0e7e73dd3a39890e2504299da1b9ec9575bfa9b8&"
+            alt="Sender Avatar" class="w-12 h-12 rounded-full border-2 border-green-500 border-full">
+        </div>
+      </div>
+
+      <div id="chat-container">
+        <!-- KOBO REPLIES GOES HERE -->
+      </div>
+
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
